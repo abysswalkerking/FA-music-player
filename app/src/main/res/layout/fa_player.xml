@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp">
+
+        <!--left side-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <LinearLayout style="@style/FaUnitLeftTheme"
+                android:id="@+id/L1">
+
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="22211" />
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FaUnitLeftTheme"
+                android:id="@+id/L2">
+
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="1222211" />
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FaUnitLeftTheme"
+                android:id="@+id/L3">
+
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="12211" />
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FaUnitLeftTheme"
+                android:id="@+id/L4">
+
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="11111222223333" />
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--right side-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <LinearLayout style="@style/FaUnitTheme"
+                android:id="@+id/R1">
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test"/>
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="111112222233333111111111" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FaUnitTheme"
+                android:id="@+id/R2">
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test"/>
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="111" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FaUnitTheme"
+                android:id="@+id/R3">
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test"/>
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="111" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/FaUnitTheme"
+                android:id="@+id/R4">
+
+                <ImageView
+                    style="@style/FaImageTheme"
+                    android:src="@drawable/test"/>
+                <TextView
+                    style="@style/FaUnitTextTheme"
+                    android:text="111" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--一键更改音乐功能-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/changeAllAudio"
+                style="@style/FaButtonTheme"
+                android:text="@string/changeAll"/>
+        </LinearLayout>
+
+        <!--一键播放音乐功能-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/FaTextTheme"
+                android:text="@string/delayDescription" />
+
+            <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/delay"/>
+
+            <TextView
+                style="@style/FaTextTheme"
+                android:text="@string/delayUnit"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/playAllAudio"
+                    style="@style/FaButtonTheme"
+                    android:text="@string/playAll"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--重置音乐功能-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/resetAudio"
+            style="@style/FaButtonTheme"
+            android:layout_alignParentLeft="true"
+            android:text="@string/reset"/>
+    </LinearLayout>
+</LinearLayout>
