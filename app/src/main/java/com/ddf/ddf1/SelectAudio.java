@@ -79,7 +79,6 @@ public class SelectAudio extends Activity {
                                     mp.stop();
                                     mp.reset();
                                     mp.release();
-                                    mp = null;
                                 }
                             }
                         });

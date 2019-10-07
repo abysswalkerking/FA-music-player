@@ -6,124 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginTop="20dp">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="40dp">
-
-        <!--left side-->
+        android:layout_height="360dp">
         <LinearLayout
+            android:id="@+id/layout_fa_units"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="right">
-
-            <LinearLayout style="@style/FaUnitLeftTheme"
-                android:id="@+id/L1">
-
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="22211" />
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/FaUnitLeftTheme"
-                android:id="@+id/L2">
-
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="1222211" />
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/FaUnitLeftTheme"
-                android:id="@+id/L3">
-
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="12211" />
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/FaUnitLeftTheme"
-                android:id="@+id/L4">
-
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="11111222223333" />
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test" />
-            </LinearLayout>
-
+            android:orientation="vertical">
         </LinearLayout>
-
-        <!--right side-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:gravity="left">
-
-            <LinearLayout style="@style/FaUnitTheme"
-                android:id="@+id/R1">
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test"/>
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="111112222233333111111111" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/FaUnitTheme"
-                android:id="@+id/R2">
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test"/>
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="111" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/FaUnitTheme"
-                android:id="@+id/R3">
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test"/>
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="111" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/FaUnitTheme"
-                android:id="@+id/R4">
-
-                <ImageView
-                    style="@style/FaImageTheme"
-                    android:src="@drawable/test"/>
-                <TextView
-                    style="@style/FaUnitTextTheme"
-                    android:text="111" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -152,13 +44,41 @@
 
             <TextView
                 style="@style/FaTextTheme"
+                android:text="@string/number" />
+
+            <EditText
+                style="@style/FaTextTheme"
+                android:id="@+id/countInput"
+                android:inputType="number"
+                android:text="4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/modifyCount"
+                    style="@style/FaButtonTheme"
+                    android:text="@string/confirm"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--一键播放音乐功能-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/FaTextTheme"
                 android:text="@string/delayDescription" />
 
             <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:entries="@array/delay"/>
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/delay"/>
 
             <TextView
                 style="@style/FaTextTheme"

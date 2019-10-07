@@ -19,7 +19,6 @@
         </activity>
         <activity android:name=".FaPlayer"></activity>
         <activity android:name=".SelectAudio"></activity>
-        <activity android:name=".ChangeAllAudio"></activity>
     </application>
 
 </manifest>

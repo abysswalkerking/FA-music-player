@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_fa_unit">
+    <LinearLayout style="@style/FaUnitLeftTheme"
+        android:id="@+id/L1"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/FaUnitTextTheme"
+            android:text="22211" />
+
+        <ImageView
+            style="@style/FaImageTheme"
+            android:src="@drawable/test" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/FaUnitTheme"
+        android:id="@+id/R1"
+        android:layout_weight="1">
+
+        <ImageView
+            style="@style/FaImageTheme"
+            android:src="@drawable/test"/>
+        <TextView
+            style="@style/FaUnitTextTheme"
+            android:text="111112222233333111111111" />
+    </LinearLayout>
+</LinearLayout>
